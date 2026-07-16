@@ -1,0 +1,27 @@
+let studentName = "Roshni"; 
+let rollNo = 41; 
+let marks = [80, 90, 85]; 
+function totalMarks(arr) { 
+ return arr[0] + arr[1] + arr[2]; 
+} 
+function percentage(total) { 
+ return total / 3; 
+} 
+let total = totalMarks(marks); 
+let percent = percentage(total); 
+let grade; 
+if (percent >= 90) 
+ grade = "A+"; 
+else if (percent >= 80) 
+ grade = "A"; 
+else if (percent >= 70) 
+ grade = "B";
+else if (percent >= 60) 
+ grade = "C"; 
+else 
+ grade = "Fail"; 
+console.log(`Student Name: ${studentName}`); console.log(`Roll Number: ${rollNo}`); 
+console.log("Subject Marks:"); 
+for (let i = 0; i < marks.length; i++) {  console.log(`Subject ${i + 1}: ${marks[i]}`); } 
+console.log("Total Marks:", total); 
+console.log("Percentage:", percent + "%"); console.log("Grade:", grade); 
